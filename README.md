@@ -31,13 +31,13 @@ npm run preview:site
 2. The workflow builds `web/dist` and deploys it under:
 
    ```text
-   https://<user>.github.io/mangayomu-official-extensions/
+   https://mangayomu.github.io/mangayomu-official-extensions/
    ```
 
 3. Catalog URL to paste into MangaYomu **Settings → Extensions → Add repository**:
 
    ```text
-   https://<user>.github.io/mangayomu-official-extensions/repository.json
+   https://mangayomu.github.io/mangayomu-official-extensions/repository.json
    ```
 
 Every package manifest must declare an explicit `x.y.z` version; the catalog exposes `version` alongside `tags`.
