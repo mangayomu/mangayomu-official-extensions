@@ -1,0 +1,30 @@
+{
+  "manifestVersion": 1,
+  "id": "local-source",
+  "name": "Local Source",
+  "version": "1.0.0",
+  "publisher": "MangaYomu",
+  "tags": ["source", "official", "local"],
+  "entrypoints": {
+    "server": "server/index.mjs",
+    "client": "client/index.mjs"
+  },
+  "contributes": {
+    "sources": [
+      {
+        "id": "local",
+        "name": "Local Source",
+        "lang": "en",
+        "defaultLanguage": "en",
+        "languages": [
+          { "code": "en", "label": "English", "flag": "🇬🇧" }
+        ],
+        "baseUrl": ""
+      }
+    ],
+    "client": {
+      "settingsPanels": ["local-library"],
+      "browseSources": ["local"]
+    }
+  }
+}

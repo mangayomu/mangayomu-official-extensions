@@ -1,0 +1,18 @@
+{
+  "name": "@mangayomu/official-extensions",
+  "private": true,
+  "type": "module",
+  "version": "1.0.0",
+  "description": "Official MangaYomu extensions, bundled in a single repository catalog (Local Source).",
+  "scripts": {
+    "build:zips": "node scripts/build-zips.mjs",
+    "prepare:site": "node scripts/prepare-web.mjs",
+    "dev:site": "npm run build:zips && npm --prefix web run dev",
+    "build:site": "npm run build:zips && npm run prepare:site && npm --prefix web run build",
+    "preview:site": "npm --prefix web run preview",
+    "test": "node local-source/test/manifest.test.mjs && node local-source/test/layout.test.mjs && node local-source/test/server.test.mjs"
+  },
+  "devDependencies": {
+    "vite": "^6.0.0"
+  }
+}

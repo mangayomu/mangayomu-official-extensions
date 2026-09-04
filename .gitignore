@@ -1,0 +1,7 @@
+dist/
+web/public/
+web/node_modules/
+web/dist/
+node_modules/
+.DS_Store
+.claude/

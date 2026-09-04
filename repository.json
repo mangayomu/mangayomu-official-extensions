@@ -1,0 +1,19 @@
+{
+  "repositoryVersion": 1,
+  "id": "official",
+  "name": "Official MangaYomu Extensions",
+  "packages": [
+    {
+      "id": "local-source",
+      "name": "Local Source",
+      "version": "1.0.0",
+      "url": "dist/local-source-1.0.0.zip",
+      "sha256": "d9b19d6bf4f932395932264d16dd056d10866553e392ca5321adff96564d430d",
+      "tags": [
+        "source",
+        "official",
+        "local"
+      ]
+    }
+  ]
+}
